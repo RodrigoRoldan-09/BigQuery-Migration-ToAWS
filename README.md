@@ -131,8 +131,8 @@ catalogTableName="your_table"
 ## Deployment Steps
 
 1. Ensure the AWS CLI and CDK are installed and configured.
-2. Place the ETL script (`script.py`) in the `script/` directory (it should be there already).
-3. Place the JDBC connector `.jar` file (e.g., `GoogleBigQueryJDBC42.jar`) in the `assets/` directory (it also should be there already).
+2. Place the ETL script (`script.py`) in the `src/` directory (it should be there already).
+3. Place the JDBC connector `.jar` file (e.g., `GoogleBigQueryJDBC42.jar`) in the `src/` directory (it also should be there already).
 4. Run the following commands:
 
 ```bash

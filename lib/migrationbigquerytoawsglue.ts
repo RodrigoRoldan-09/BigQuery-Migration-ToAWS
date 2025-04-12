@@ -32,7 +32,7 @@ export class BigQueryToGlueStack extends cdk.Stack {
 
     // Upload Python Glue script to S3
     new s3deploy.BucketDeployment(this, 'DeployGlueScript', {
-      sources: [s3deploy.Source.asset(path.join(__dirname, '../script'))], //script with the information for the aws migration
+      sources: [s3deploy.Source.asset(path.join(__dirname, '../src'))], //script with the information for the aws migration
       destinationBucket: bucket,
       destinationKeyPrefix: 'scripts/', //folder name were the script is going to be saved
       retainOnDelete: false,
@@ -41,7 +41,7 @@ export class BigQueryToGlueStack extends cdk.Stack {
 
     // Upload JDBC connector JAR to S3
     new s3deploy.BucketDeployment(this, 'DeployJdbcConnector', {
-      sources: [s3deploy.Source.asset(path.join(__dirname, '../assets/GoogleBigQueryJDBC42.jar'))], //your .jar required to create the glue connection with bigquery
+      sources: [s3deploy.Source.asset(path.join(__dirname, '../src/GoogleBigQueryJDBC42.jar'))], //your .jar required to create the glue connection with bigquery
       destinationBucket: bucket,
       destinationKeyPrefix: 'JDBC-connector/', //the connector
       retainOnDelete: false,
