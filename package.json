@@ -1,8 +1,8 @@
 {
-  "name": "cdk-hello-world-v2",
+  "name": "migrationbigquerytoawsglue",
   "version": "0.1.0",
   "bin": {
-    "cdk-hello-world-v2": "bin/cdk-hello-world-v2.js"
+    "migrationbigquerytoawsglue": "bin/migrationbigquerytoawsglue.js"
   },
   "scripts": {
     "build": "tsc",

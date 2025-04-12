@@ -1,10 +1,10 @@
 #!/usr/bin/env node
 import * as cdk from 'aws-cdk-lib';
-import { CdhelloWorldV2Stack } from '../lib/cdk-hello-world-v2-stack';
+import { migrationbigquerytoawsglue } from '../lib/migrationbigquerytoawsglue';
 
 
 const app = new cdk.App();
-new CdhelloWorldV2Stack(app, 'CdkHelloWorldV2Stack', {
+new migrationbigquerytoawsglue(app, 'migrationbigquerytoawsglue', {
   /* If you don't specify 'env', this stack will be environment-agnostic.
    * Account/Region-dependent features and context lookups will not work,
    * but a single synthesized template can be deployed anywhere. */
